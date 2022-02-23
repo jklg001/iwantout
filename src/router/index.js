@@ -1,30 +1,42 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import HomeView from "../views/HomeView.vue";
+import MessageView from "../views/message/MessageView.vue";
+import ContactsView from "../views/contacts/ContactsView.vue";
+import DocumentView from "../views/docment/DocumentView.vue";
+import MineView from "../views/mine/MineView.vue";
+import WorkspaceView from "../views/workspace/WorkspaceView.vue";
 
 Vue.use(VueRouter);
-
 const routes = [
   {
-    path: "/home",
-    name: "home",
-    component: HomeView,
+    path: "/",
+    name: "MessageView",
+    component: MessageView,
   },
   {
-    path: "/about",
-    name: "about",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+    path: "/contacts",
+    name: "ContactsView",
+    component: ContactsView,
+  },
+  {
+    path: "/mine",
+    name: "MineView",
+    component: MineView,
+  },
+  {
+    path: "/document",
+    name: "DocumentView",
+    component: DocumentView,
+  },
+  {
+    path: "/workspace",
+    name: "WorkspaceView",
+    component: WorkspaceView,
   },
 ];
-
 const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
   routes,
 });
-
 export default router;
