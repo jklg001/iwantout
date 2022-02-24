@@ -34,7 +34,7 @@ export default {
 <style scoped>
 .guide-area {
   position: absolute;
-  height: 1rem;
+  height: 1.12rem;
   left: 0;
   right: 0;
   bottom: 0;
@@ -44,14 +44,14 @@ export default {
   position: relative;
   display: block;
   float: left;
-  height: 1rem;
+  height: 1.12rem;
   width: 20%;
   text-align: center;
   color: #565759;
 }
 .guide-area .nav-link .txt {
   position: absolute;
-  bottom: 0.1rem;
+  bottom: 0.2rem;
   font-size: 0.2rem;
   left: 0;
   right: 0;

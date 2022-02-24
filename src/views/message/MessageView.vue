@@ -1,14 +1,18 @@
 <template>
   <div>
-    <h1>消息</h1>
     <footer-guide></footer-guide>
+    <page-header></page-header>
   </div>
 </template>
 <script>
 import FooterGuide from "@/components/FooterGuide.vue";
+import PageHeader from "@/components/PageHeader.vue";
 export default {
   name: "MessageView",
-  components: { FooterGuide },
+  components: {
+    FooterGuide,
+    PageHeader,
+  },
 };
 </script>
 <style scoped></style>
