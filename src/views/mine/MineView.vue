@@ -2,7 +2,7 @@
   <div>
     <page-header>
       <template v-slot:title>
-        <p></p>
+        <p class="decs">我</p>
       </template>
       <template v-slot:searchIcon>
         <span class="sym iconfont"></span>

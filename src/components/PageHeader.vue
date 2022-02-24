@@ -22,7 +22,7 @@ export default {
 
 <style scoped>
 .header-area {
-  height: 1.7rem;
+  height: 1rem;
   background-color: #3b74c1;
 }
 .header-area {
